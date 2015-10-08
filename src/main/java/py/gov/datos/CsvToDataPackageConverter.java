@@ -68,10 +68,8 @@ public class CsvToDataPackageConverter implements FileConverter {
         List<List<String>> clazzes = getClazzList(file, path, params);
         JSONArray content = new JSONArray();
 
-        int cont = 0;
         for (List<String> record : clazzes) {
             OrderedJSONObject clazz = new OrderedJSONObject();
-            //clazz.put("index", ++cont);
             clazz.put("class", record.get(0));
             clazz.put("name", record.get(1));
             clazz.put("description", record.get(2));
