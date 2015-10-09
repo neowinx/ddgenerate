@@ -1,8 +1,13 @@
 package py.gov.datos;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.nio.file.Files;
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -116,7 +121,14 @@ public class CsvToJsonConverter implements FileConverter {
 	 */
 	protected File writeJson(JSONArray array, File file) throws IOException, JSONException {
 
-		Files.write(file.toPath(), array.toString(4).getBytes());
+		//System.out.println(array);
+		Writer out = new BufferedWriter(new OutputStreamWriter(
+                new FileOutputStream(file.getPath()), "UTF-8"));
+        out.write(array.toString());
+        out.flush();
+        out.close();
+		//Files.write(file.toPath(), array.toString(4).getBytes());
+		
 		return file;
 	}
 
@@ -141,7 +153,7 @@ public class CsvToJsonConverter implements FileConverter {
 	private JSONArray csvToJson(File file, String flagToStart) throws IOException, JSONException {
 		JSONArray toRet = new JSONArray();
 
-		List<String> lines = Files.readAllLines(file.toPath(), Charsets.ISO_8859_1);
+		List<String> lines = Files.readAllLines(file.toPath(), Charsets.UTF_8);
 		List<String> header = null;
 
 		boolean empezoArchivo = false;
