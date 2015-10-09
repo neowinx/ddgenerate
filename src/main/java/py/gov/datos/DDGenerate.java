@@ -74,6 +74,10 @@ public class DDGenerate {
                 {FileConverterType.XLS_TO_CSV, FileConverterType.CSV_TO_JSONLD}));
         chainMap.put("conf", Arrays.asList(new FileConverterType[]
                 {FileConverterType.XLS_TO_CSV, FileConverterType.CSV_TO_CONF}));
+        chainMap.put("datapackage", Arrays.asList(new FileConverterType[]
+                {FileConverterType.XLS_TO_CSV, FileConverterType.CSV_TO_DATAPACKAGE}));
+        chainMap.put("json", Arrays.asList(new FileConverterType[]
+                {FileConverterType.XLS_TO_CSV, FileConverterType.CSV_TO_JSON}));
     }
 
     /**

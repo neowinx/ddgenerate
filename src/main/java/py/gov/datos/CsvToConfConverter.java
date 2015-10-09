@@ -43,7 +43,7 @@ public class CsvToConfConverter implements FileConverter {
 
 		String content = generateContent();
 		try {
-			File result = writeToFile("dncp", path, content);
+			writeToFile("dncp", path, content);
 		} catch (IOException e) {
 			e.printStackTrace();
 			LOG.error("Can not create output file");

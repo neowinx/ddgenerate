@@ -34,12 +34,10 @@ import org.apache.wink.json4j.OrderedJSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import py.gov.datos.model.OwlClass;
-import py.gov.datos.model.OwlCardinality;
 import py.gov.datos.model.OwlProperty;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.text.Normalizer;

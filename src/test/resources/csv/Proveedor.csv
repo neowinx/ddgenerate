@@ -1,0 +1,7 @@
+Propiedades de la clase Proveedor;;;;;;;;;;;;;;
+propiedad en json;propiedad en json-ld;Nombre de la propiedad;Label: ESPAÑOL;Label: INGLES;Label Alternativos: ESPAÑOL, separados por comas;Label Alternativos: INGLES, separados por comas;Ejemplo;Tipo de datos;Cardinalidad (single or multivalue);Formato, si aplica, EJ, para las fechas;Restricciones (incluyendo posibles valores separados por comas);Descripcion: Español;Descripcion: Ingles;Propiedad equivalente
+id;id;Identificador del Proveedor;Identificador del Proveedor;;;;80045454-juan-gonzalez;texto;single;;;;;
+ruc;ruc;RUC;RUC;Taxpayer Identification;Registro de Contribuyente, Identificador del Contribuyente, Cedula Tributaria, Identificación tributaria,  Número de Identificación Fiscal, identificador fiscal;Taxpayer Identification Number, Taxpayer Registration, Tax Payer Registration;80022264;texto;single;;;Número del Registro o Cédula Tributaria;The Taxpayer Identification number or code;
+razon_social;razon_social;razon social;razon social;Name;Nombre de la empresa, denominación legal, nombre de la firma;;EDICIONES JURIDICAS CATENA S.A.;texto;single;;;Nombre de la empresa;company name;
+telefono;telefono;telefono;telefono;Telephone;;;490165/981448854;telefono;single;;;Teléfono;Telephone number;
+email;email;email;email;email;e-mail, correo electrónico;;edijuca@tigo.com.py;email;single;;;Email;Email;
